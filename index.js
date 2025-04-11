@@ -1,10 +1,13 @@
-const question = document.querySelector('.question')
-question.textContent= "⚡️Jak se jmenoval Ten Jehož Jméno Nesmíme Vyslovit?⚡️"
+const questionElm = (document.querySelector('.question').textContent =
+  'Uveďte příjmení amerického vynálezce, který v roce 1876 jako první úspěšně podal patent na zařízení, které je dnes považováno za první telefon.');
 
-const personalAnswer = prompt('Zadejte odpověď:').toLowerCase
-const answer__text = personalAnswer
-const answer = document.querySelector('.answer')
+const answerPrompt = prompt('Vaše odpověď:');
 
-if (personalAnswer === 'Lord Voldemort'.toLowerCase) {
-    answer.classList.add('answer--correct')
-} else answer.classList.add('answer--wrong')
+const answerTextElm = (document.querySelector('.answer__text').textContent = `${answerPrompt}`);
+
+const answerElm = document.querySelector('.answer');
+if (answerPrompt === 'Bell') {
+  answerElm.classList.add('answer--correct');
+} else {
+  answerElm.classList.add('answer--wrong');
+}

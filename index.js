@@ -1,8 +1,3 @@
-//Použijte funkci prompt a zeptejte se uživatele na správnou odpověď. 
-// Vyberte element s třídou answer__text a nastavte obsah elementu na odpověď od uživatele. 
-// Vyberte element s třidou answer. Pokud je odpověď příjmení Bell, přidejte k tomuto elementu třídu answer--correct. 
-// V opačném případě přidejte třídu answer--wrong.
-
 const question = document.querySelector('.question')
 question.textContent= "⚡️Jak se jmenoval Ten Jehož Jméno Nesmíme Vyslovit?⚡️"
 
